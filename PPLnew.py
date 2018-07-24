@@ -2,8 +2,8 @@
 #of a text file to be printed, if not, it exits the programme. If user enters an invalid name or password
 #they will be asked if they want to try again and if they do, the programme will loop to the beginning.
 
-def main():
-
+name=""
+while name != 'Smith' or password != 'Peanuts':
     print("\nWelcome.\n")
     name = input("Please enter your name: ").capitalize()
     password = input("Please enter your password: ")
@@ -19,11 +19,3 @@ def main():
                 print(contents)
         else:
             exit()
-    else:
-        startagain = input("That is an invalid name/password. Would you like to try again?: ")
-        if startagain.startswith("y"):
-            main()
-        else:
-            exit()
-
-main()
